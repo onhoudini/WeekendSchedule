@@ -1,129 +1,99 @@
-# Weekend Schedule App
+# Weekend Schedule
 
-🇺🇸 **English** | 🇧🇷 **Português**
-
----
-
-## 🇺🇸 English
-
-A simple and intuitive web application for creating and managing weekly schedules with a dark theme interface.
-
-### 🚀 Features
-
-- ✅ Pre-defined time slots from 8 AM to 10 PM
-- ✅ Columns for each day of the week (Monday-Sunday)
-- ✅ Dynamic input fields for each time slot
-- ✅ Dark theme interface with Bootstrap
-- ✅ Responsive design for all devices
-- ✅ Clean and minimalist layout
-
-### 🛠️ Technologies
-
-- **HTML5** - Application structure
-- **JavaScript** - Dynamic content generation
-- **Bootstrap 5.3.3** - CSS framework and responsive design
-
-### 📁 Project Structure
-
-```
-Weekend Schedule/
-├── index.html          # Main page
-├── LICENSE             # MIT License file
-└── README.md           # Documentation
-```
-
-### 🚀 How to Use
-
-1. Open the `index.html` file in a browser
-2. View the pre-generated schedule grid
-3. Click on any input field to add activities for specific time slots
-4. Each row represents an hour from 8 AM to 10 PM
-5. Each column represents a day of the week
-
-### 💻 Local Development
-
-To run locally with HTTP server:
-
-```bash
-# Enter project directory
-cd "Weekend Schedule"
-
-# Start simple HTTP server
-python3 -m http.server 8000
-
-# Access in browser
-# http://localhost:8000/index.html
-```
-
-### 🎨 Interface
-
-- **Dark Theme**: Modern dark interface using Bootstrap
-- **Responsive**: Works on desktop, tablet, and mobile
-- **Clean Design**: Minimalist approach with clear visual hierarchy
+🇧🇷 **Português** | 🇺🇸 **English**
 
 ---
 
 ## 🇧🇷 Português
 
-Uma aplicação web simples e intuitiva para criar e gerenciar horários semanais com interface em tema escuro.
+Uma aplicação web simples para criar, salvar e carregar cronogramas semanais, com interface escura e responsiva.
 
-### 🚀 Funcionalidades
+### ✨ Funcionalidades
 
-- ✅ Horários pré-definidos das 8h às 22h (8 AM até 10 PM)
-- ✅ Colunas para cada dia da semana (Segunda-Domingo)
-- ✅ Campos de input dinâmicos para cada horário
-- ✅ Interface em tema escuro com Bootstrap
-- ✅ Design responsivo para todos os dispositivos
-- ✅ Layout limpo e minimalista
+- Grade de horários das 8h às 22h para todos os dias da semana
+- Inputs dinâmicos para cada horário e dia
+- Salvar cronograma em arquivo JSON (download)
+- Carregar cronograma a partir de arquivo JSON (upload)
+- Interface escura com Bootstrap 5
+- Design responsivo para desktop e mobile
 
-### 🛠️ Tecnologias
+### 🚀 Como Usar
 
-- **HTML5** - Estrutura da aplicação
-- **JavaScript** - Geração dinâmica de conteúdo
-- **Bootstrap 5.3.3** - Framework CSS e design responsivo
+1. **Execute em um servidor local** (necessário para funcionar corretamente):
+    ```bash
+    cd "Weekend Schedule"
+    python3 -m http.server 8000
+    # Depois acesse: http://localhost:8000/index.html
+    ```
+2. Preencha os campos de atividades nos horários e dias desejados.
+3. Clique em **"Save your schedule (JSON)"** para baixar seu cronograma.
+4. Para restaurar um cronograma salvo, clique em **"Upload your schedule (JSON)"** e selecione o arquivo JSON.
+
+### 🛠️ Tecnologias Utilizadas
+
+- HTML5 – Estrutura da aplicação
+- JavaScript – Geração dinâmica da tabela e manipulação de arquivos
+- Bootstrap 5 – Estilização e responsividade
 
 ### 📁 Estrutura do Projeto
 
 ```
 Weekend Schedule/
-├── index.html          # Página principal
-├── LICENSE             # Arquivo de licença MIT
-└── README.md           # Documentação
+├── index.html
+├── defined-schedule.js
+├── schedule-json.js
+├── LICENSE
+└── README.md
 ```
 
-### 🚀 Como Usar
+### 📄 Licença
 
-1. Abra o arquivo `index.html` em um navegador
-2. Visualize a grade de horários pré-gerada
-3. Clique em qualquer campo de input para adicionar atividades em horários específicos
-4. Cada linha representa uma hora das 8h às 22h
-5. Cada coluna representa um dia da semana
-
-### 💻 Desenvolvimento Local
-
-Para rodar localmente com servidor HTTP:
-
-```bash
-# Entre no diretório do projeto
-cd "Weekend Schedule"
-
-# Inicie um servidor HTTP simples
-python3 -m http.server 8000
-
-# Acesse no navegador
-# http://localhost:8000/index.html
-```
-
-### 🎨 Interface
-
-- **Tema Escuro**: Interface moderna escura usando Bootstrap
-- **Responsivo**: Funciona em desktop, tablet e mobile
-- **Design Limpo**: Abordagem minimalista com hierarquia visual clara
+MIT License – Sinta-se livre para usar, modificar e compartilhar este projeto.
 
 ---
 
-## 📄 License
+## 🇺🇸 English
 
-MIT License - feel free to use this project for learning and development purposes.
+A simple web application to create, save, and load weekly schedules, with a dark and responsive interface.
 
-Licença MIT - sinta-se livre para usar este projeto para fins de aprendizado e desenvolvimento.
+### ✨ Features
+
+- Time grid from 8 AM to 10 PM for all days of the week
+- Dynamic inputs for each time slot and day
+- Save schedule as a JSON file (download)
+- Load schedule from a JSON file (upload)
+- Dark interface with Bootstrap 5
+- Responsive design for desktop and mobile
+
+### 🚀 How to Use
+
+1. **Run on a local server** (required for proper functionality):
+    ```bash
+    cd "Weekend Schedule"
+    python3 -m http.server 8000
+    # Then access: http://localhost:8000/index.html
+    ```
+2. Fill in the activity fields for the desired times and days.
+3. Click **"Save your schedule (JSON)"** to download your schedule.
+4. To restore a saved schedule, click **"Upload your schedule (JSON)"** and select the JSON file.
+
+### 🛠️ Technologies Used
+
+- HTML5 – Application structure
+- JavaScript – Dynamic table generation and file handling
+- Bootstrap 5 – Styling and responsiveness
+
+### 📁 Project Structure
+
+```
+Weekend Schedule/
+├── index.html
+├── defined-schedule.js
+├── schedule-json.js
+├── LICENSE
+└── README.md
+```
+
+### 📄 License
+
+MIT License – Feel free to use, modify, and share this project.
